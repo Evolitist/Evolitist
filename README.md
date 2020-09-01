@@ -1,16 +1,46 @@
-### Hi there 👋
+```kotlin
+fun main() {
+  initProfile {
+    basicData.apply {
+      username = "Evolitist"
+      nickname = "evo"
+      fullName = "Oleg Lopukhov"
+      birthDate = LocalDate(1998, 3, 31)
+      occupation = Russia.Novosibirsk
+    }
 
-<!--
-**Evolitist/Evolitist** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    employment.apply {
+      current = EmploymentEntry(
+        company = "Improve Group",
+        position = "Android developer",
+        rank = Ranks.MIDDLE,
+      )
+      past = mapOf(
+        LocalDate(2018, 5, 4).periodUntil(LocalDate(2018, 12, 28)) to EmploymentEntry(
+          company = "ATAPY Software",
+          position = "Android developer",
+          rank = Ranks.UNRANKED,
+        ),
+        LocalDate(2019, 1, 9).periodUntil(LocalDate(2020, 8, 14)) to EmploymentEntry(
+          company = "ABBYY",
+          position = "Android developer",
+          rank = Ranks.UNRANKED,
+        ),
+      )
+    }
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    skills = mapOf(
+      "Android" to Level.INTERMEDIATE,
+      "Kotlin" to Level.ADVANCED,
+      "Flutter" to Level.ADVANCED,
+      "Dart" to Level.INTERMEDIATE,
+      "Git" to Level.INTERMEDIATE,
+      "Linux" to Level.ADVANCED,
+      "Java" to Level.INTERMEDIATE,
+      "RxJava" to Level.LEARNING,
+      "Dagger" to Level.LEARNING,
+      "Retrofit" to Level.INTERMEDIATE,
+    )
+  }
+}
+```

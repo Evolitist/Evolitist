@@ -11,9 +11,9 @@ fun main() {
 
     employment.apply {
       current = EmploymentEntry(
-        company = "Improve Group",
+        company = "Heads and Hands",
         position = "Android developer",
-        rank = Ranks.MIDDLE,
+        rank = Ranks.SENIOR,
       )
       past = mapOf(
         LocalDate(2018, 5, 4).periodUntil(LocalDate(2018, 12, 28)) to EmploymentEntry(
@@ -30,16 +30,18 @@ fun main() {
     }
 
     skills = mapOf(
-      "Android" to Level.INTERMEDIATE,
+      "Android" to Level.ADVANCED,
       "Kotlin" to Level.ADVANCED,
       "Flutter" to Level.ADVANCED,
       "Dart" to Level.INTERMEDIATE,
       "Git" to Level.INTERMEDIATE,
       "Linux" to Level.ADVANCED,
       "Java" to Level.INTERMEDIATE,
-      "RxJava" to Level.LEARNING,
-      "Dagger" to Level.LEARNING,
+      "RxJava" to Level.INTERMEDIATE,
+      "Dagger" to Level.INTERMEDIATE,
       "Retrofit" to Level.INTERMEDIATE,
+      "Coroutines" to Level.INTERMEDIATE,
+      "Compose" to Level.INTERMEDIATE,
     )
   }
 }

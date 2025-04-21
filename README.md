@@ -40,8 +40,8 @@ fun main() {
       "RxJava" to Level.INTERMEDIATE,
       "Dagger" to Level.INTERMEDIATE,
       "Retrofit" to Level.INTERMEDIATE,
-      "Coroutines" to Level.INTERMEDIATE,
-      "Compose" to Level.INTERMEDIATE,
+      "Coroutines" to Level.ADVANCED,
+      "Compose" to Level.ADVANCED,
     )
   }
 }
